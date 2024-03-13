@@ -1,0 +1,78 @@
+.header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(211, 209, 108, 0.3);
+  }
+  
+  .header-left,
+  .header-right {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 100px;
+    align-self: flex-start;
+  }
+  
+  .header-content {
+    text-align: center;
+  }
+  
+  .restaurant-name {
+    font-size: 24px;
+    margin: 0;
+    color: rgb(211, 209, 108);
+    align-self: flex-start;
+  }
+  
+  .slogan {
+    font-size: 16px;
+    margin: 0;
+    color: #777;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center; 
+  }
+  
+  .navigation li {
+    margin-right: 20px; 
+    justify-content: space-between;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .navigation a:hover {
+    color: #ff6347;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .header {
+      flex-direction: row; 
+    }
+  
+    .header-left,
+    .header-right {
+      width: auto; 
+    }
+  
+    .header-content {
+      margin-bottom: 0; 
+    }
+  }

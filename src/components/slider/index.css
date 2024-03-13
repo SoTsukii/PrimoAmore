@@ -1,0 +1,82 @@
+.menu-slider {
+  position: relative;
+  width: 80%;
+  margin: 20px auto 0;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.menu-slider:hover {
+  transform: scale(1.05);
+}
+
+.menu-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.3s ease-in-out, opacity 0.5s ease;
+  opacity: 0.7;
+}
+
+.menu-slider button:hover {
+  color: #333;
+  background: #ddd;
+}
+
+.menu-slider button:first-child {
+  left: 10px;
+}
+
+.menu-slider button:last-child {
+  right: 10px;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slider-content img {
+  width: 50%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slider-content-description {
+  flex: 1;
+  padding: 20px 0 0;
+  text-align: center;
+}
+
+.slider-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #555;
+  transition: opacity 0.5s ease;
+}
+
+.slider-content p {
+  font-size: 16px;
+  color: #777;
+  transition: opacity 0.5s ease;
+}
+
+.menu-slider:hover button {
+  opacity: 0.5;
+}
+
